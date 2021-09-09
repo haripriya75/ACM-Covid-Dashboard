@@ -1,0 +1,206 @@
+    * {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .navbar {
+        background-color: #10131f;
+        border: 2px #10131f solid;
+    }
+    
+    span {
+        font-size: 20px;
+        vertical-align: center;
+        color: rgba(192, 191, 191, 0.897);
+        cursor: pointer;
+    }
+    
+    #acm_logo {
+        padding: 10px;
+    }
+    
+    #section1,
+    #section2,
+    #section3,
+    #section4 {
+        background-color: #10131f;
+    }
+    
+    #section2 {
+        border-top: 50px solid #10131f;
+    }
+    /* NAVBAR */
+    
+    #nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        background-color: #171c2c;
+        margin-top: 5px;
+    }
+    /* #india_logo {
+        height: 5em;
+        filter: invert(100%);
+    } */
+    
+    #acm_logo {
+        height: 5em;
+    }
+    
+    #state,
+    #covid-btn,
+    #cowin-btn {
+        box-shadow: 0 4px 10px rgba(0, 29, 54, .04)!important;
+        color: #646464;
+        border: snow;
+        background-color: #fff;
+        height: 2.25em;
+        margin-top: 2em;
+        margin-right: 1em;
+        text-align: center;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+    
+    #covid-btn a,
+    #cowin-btn a {
+        color: #3f3f3f;
+    }
+    
+    #covid-btn,
+    #cowin-btn {
+        width: 9em;
+    }
+    /* SECTION1 */
+    
+    #itistable2 {
+        height: 400px;
+        width: 95vw;
+        border-radius: 25px;
+        margin: auto;
+        background-color: #171c2c;
+        padding: 20px;
+    }
+    
+    td,
+    th {
+        color: #fafafa;
+        background-color: #171c2c;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    #typewise p,
+    #first_dose p,
+    #second_dose p {
+        text-align: center;
+        color: #fafafa;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    
+    #genderwise p,
+    #agewise p {
+        text-align: center;
+        color: #fafafa;
+        font-size: 25px;
+        margin-bottom: 60px;
+    }
+    /* SECTION2 */
+    
+    #section2 {
+        background-color: #10131f;
+    }
+    
+    #typewise {
+        position: relative;
+        width: 95vw;
+        background-color: #171c2c;
+        margin: auto;
+        padding: 20px;
+        border-radius: 25px;
+    }
+    
+    #section3,
+    #section4 {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 50px solid #10131f;
+        justify-content: space-around;
+    }
+    
+    #first_dose,
+    #second_dose {
+        width: 1000px;
+        /* height: 500px; */
+        background-color: #171c2c;
+        padding: 20px;
+        border-radius: 25px;
+        margin-bottom: 25px;
+    }
+    
+    #agewise {
+        background-color: #171c2c;
+        width: 400px;
+        height: 600px;
+        padding: 20px;
+        border-radius: 25px;
+        margin-bottom: 25px;
+    }
+    
+    #genderwise {
+        background-color: #171c2c;
+        width: 400px;
+        height: 600px;
+        padding: 20px;
+        border-radius: 25px;
+        margin-bottom: 25px;
+    }
+    
+    @media screen and (max-width:1000px) {
+        #first_dose,
+        #second_dose {
+            width: 95vw;
+            height: 90vh;
+            position: relative;
+            padding-top: 60px;
+            margin: auto;
+        }
+    }
+    
+    @media screen and (max-width:1500px) {
+        #agewise,
+        #genderwise {
+            width: 550px;
+        }
+        #agewise p,
+        #genderwise p {
+            margin-bottom: 0;
+        }
+    }
+    
+    @media screen and (max-width:550px) {
+        #state {
+            box-shadow: 0 4px 10px rgba(0, 29, 54, .04)!important;
+            color: #646464;
+            border: snow;
+            background-color: #fff;
+            height: 2.25em;
+            width: 120px;
+            margin-top: 2em;
+            margin-right: 1em;
+            text-align: center;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+    }

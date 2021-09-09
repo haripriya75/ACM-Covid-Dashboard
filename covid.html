@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID</title>
+    <link rel="icon" href="images/acmwhitelogo.png">
+    <link rel="stylesheet" href="covid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div id="nav">
+            <div id="images">
+                <!-- <img src="images/logo.png" alt="" id="india_logo"> -->
+                <img src="images/acmwhitelogo.png" alt="" id="acm_logo">
+            </div>
+
+            <div id="btnn">
+                <button id="cowin-btn"><a href="cowin.html" style="color:black"><strong>Vaccine</strong></a></button>
+                <select id="state" onchange="verify(this)">
+                    <option value="IND" ><strong>SELECT STATE/UT</strong></option>
+                    <option value="AP">ANDHRA PRADESH</option>
+                    <option value="AN">ANDAMAN AND NICOBAR ISLANDS</option>
+                    <option value="AR">ARUNACHAL PRADESH</option>
+                    <option value="AS">ASSAM</option>
+                    <option value="BR">BIHAR</option>
+                    <option value="CH">CHANDIGARH</option>
+                    <option value="CT">CHATTISGARH</option>
+                    <option value="DN">DADAR NAGAR AND HAVELI & DAMAN AND DIU</option>
+                    <option value="DL">DELHI</option>
+                    <option value="GA">GOA</option>
+                    <option value="GJ">GUJARAT</option>
+                    <option value="HR">HARYANA</option>
+                    <option value="HP">HIMACHAL PRADESH</option>
+                    <option value="JK">JAMMU AND KASHMIR</option>
+                    <option value="JH">JHARKHAND</option>
+                    <option value="KL">KERALA</option>
+                    <option value="LA">LADAKH</option>
+                    <option value="LD">LAKSHADWEEP</option>
+                    <option value="MP">MADHYA PRADESH</option>
+                    <option value="MH">MAHARASHTRA</option>
+                    <option value="MN">MANIPUR</option>
+                    <option value="ML">MEGHALAYA</option>
+                    <option value="MZ">MIZORAM</option>
+                    <option value="NL">NAGALAND</option>
+                    <option value="OR">ODISHA</option>
+                    <option value="PY">PUDUCHERRY</option>
+                    <option value="PB">PUNJAB</option>
+                    <option value="RJ">RAJASTHAN</option>
+                    <option value="SK">SIKKIM</option>
+                    <option value="TN">TAMIL NADU</option>
+                    <option value="TG">TELANGANA</option>
+                    <option value="TR">TRIPURA</option>
+                    <option value="UP">UTTAR PRADESH</option>
+                    <option value="UT">UTTARAKHAND</option>
+                    <option value="WB">WEST BENGAL</option>
+                    
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION-1 -->
+    <div id="section1">
+        <div class="total">
+            <h3>number of cases <span title="These are the total number of new cases reported in the last 30 days">&#9432</span></h3>
+            <p id="total">
+
+            </p>
+        </div>
+        <div class="recovered">
+            <h3>recovered <span title="This is the total number of people who recovered in the last 30 days">&#9432</span></h3>
+            <p id="recovered">
+
+            </p>
+        </div>
+        <div class="deaths">
+            <h3>deaths <span title="Total number of deaths reported in the last 30 days">&#9432</span></h3>
+            <p id="deaths">
+
+            </p>
+        </div>
+    </div>
+    <!-- SECTION-2  -->
+    <div id="section2">
+        <div>
+            <div id="graph">
+                <p>Case trends <span title="Case trends for last 30 days">&#9432</span></p>
+                <canvas id="bleh"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SECTION-3 -->
+    <div id="section3">
+        <div id="pie">
+            <p>Cases <span title="Case trends for last 30 days">&#9432</span></p>
+            <canvas id="piechart"></canvas>
+        </div>
+        <div id="itistable">
+            <div style="overflow: auto; width: 100%; height: 100%;">
+                <TABle cellspacing="3">
+                    <tr style="font-size: 25px;">
+
+                        <th>States</th>
+                        <th>Total<span title="These are the total number of new cases reported in the last 30 days">&#9432</span></th>
+
+                    </tr>
+
+                </TABle>
+            </div>
+
+        </div>
+    </div>
+    <!-- SECTION-4 -->
+    <div class="section4">
+        <div id="graph2">
+            <p>Total number of cases</p>
+            <canvas id="bleh1"></canvas>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="chart.js"></script>
+    <script src="covid-graph.js"></script>
+</body>
+
+</html>

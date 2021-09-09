@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VACCINE</title>
+    <link rel="icon" href="images/acmwhitelogo.png">
+
+    <link rel="stylesheet" href="cowin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div id="nav">
+            <div id="images">
+                <!-- <img src="images/logo.png" alt="" id="india_logo"> -->
+                <img src="images/acmwhitelogo.png" alt="" id="acm_logo">
+            </div>
+            <div id="btnn">
+                <button id="covid-btn"><a href="covid.html"style="color:black"><strong>COVID</strong></a></button>
+
+                <select id="state" onchange="verify_cowin(this)">
+                    <option value="IND">SELECT STATE/UT</option>
+                    <option value="AP">ANDHRA PRADESH</option>
+                    <option value="AN">ANDAMAN AND NICOBAR ISLANDS</option>
+                    <option value="AR">ARUNACHAL PRADESH</option>
+                    <option value="AS">ASSAM</option>
+                    <option value="BR">BIHAR</option>
+                    <option value="CH">CHANDIGARH</option>
+                    <option value="CT">CHATTISGARH</option>
+                    <option value="DN">DADAR NAGAR AND HAVELI & DAMAN AND DIU</option>
+                    <option value="DL">DELHI</option>
+                    <option value="GA">GOA</option>
+                    <option value="GJ">GUJARAT</option>
+                    <option value="HR">HARYANA</option>
+                    <option value="HP">HIMACHAL PRADESH</option>
+                    <option value="JK">JAMMU AND KASHMIR</option>
+                    <option value="JH">JHARKHAND</option>
+                    <option value="KL">KERALA</option>
+                    <option value="LA">LADAKH</option>
+                    <option value="LD">LAKSHADWEEP</option>
+                    <option value="MP">MADHYA PRADESH</option>
+                    <option value="MH">MAHARASHTRA</option>
+                    <option value="MN">MANIPUR</option>
+                    <option value="ML">MEGHALAYA</option>
+                    <option value="MZ">MIZORAM</option>
+                    <option value="NL">NAGALAND</option>
+                    <option value="OR">ODISHA</option>
+                    <option value="PY">PUDUCHERRY</option>
+                    <option value="PB">PUNJAB</option>
+                    <option value="RJ">RAJASTHAN</option>
+                    <option value="SK">SIKKIM</option>
+                    <option value="TN">TAMIL NADU</option>
+                    <option value="TG">TELANGANA</option>
+                    <option value="TR">TRIPURA</option>
+                    <option value="UP">UTTAR PRADESH</option>
+                    <option value="UT">UTTARAKHAND</option>
+                    <option value="WB">WEST BENGAL</option>
+                    
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION1 -->
+    <div id="section1">
+        <div id="itistable2">
+            <div style="overflow: auto; height:100%; width:100%;">
+                <TABle cellspacing="3">
+                    <tr style="font-size: 25px;">
+
+                        <th>States</th>
+                        <th>Total <span title="Total number of vaccinations reported in the last 30 days">&#9432</span></th>
+                    </tr>
+
+                </TABle>
+            </div>
+
+        </div>
+    </div>
+    <!-- SECTION2 -->
+    <div id="section2">
+        <div id="typewise">
+            <p>Vaccination(Typewise) <span title="Vaccination trends for the last 30 days">&#9432</span></p>
+
+            <canvas id="typewise_graph"></canvas>
+        </div>
+    </div>
+    <!-- SECTION3 -->
+    <div id="section3">
+
+        <div id="agewise">
+            <p>Vaccination(agewise) </p>
+            <canvas id="agewise_pie"></canvas>
+        </div>
+
+        <div id="first_dose">
+            <p>First Dose <span title="Vaccination trends for first dose for the last 30 days">&#9432</span></p>
+            <canvas id="firstdose_graph"></canvas>
+        </div>
+    </div>
+    <!-- SECTION4        -->
+    <div id="section4">
+        <div id="genderwise">
+            <p>Vaccination(Genderwise) </p>
+            <canvas id="genderwise_pie"></canvas>
+        </div>
+        <div id="second_dose">
+            <p>second dose <span title="Vaccination trends for second dose for the last 30 days">&#9432</span>
+            </p>
+            <canvas id="seconddose_graph"></canvas>
+        </div>
+    </div>
+
+
+    <!-- SCRIPT FILES -->
+    <script src="chart.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="cowin-graph.js"></script>
+
+</body>
+
+</html>

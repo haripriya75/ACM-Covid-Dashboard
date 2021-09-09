@@ -1,0 +1,305 @@
+    * {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        /* background-color: rgba(4, 2, 20, 0.877); */
+    }
+    /* COLORS FOR THE BODY  */
+    
+    span {
+        font-size: 20px;
+        vertical-align: center;
+        color: rgba(192, 191, 191, 0.897);
+        cursor: pointer;
+    }
+    
+    .navbar {
+        background-color: #10131f;
+        border: 2px #10131f solid;
+    }
+    /* 1F263C */
+    
+    #section1,
+    #section3,
+    .section4 {
+        background-color: #10131f;
+    }
+    
+    #section2 {
+        background-color: #10131f;
+        border-top: 50px solid #10131f;
+        /* height: 85em;
+        width: 150em; */
+    }
+    /* NAVBAR */
+    
+    #nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        background-color: #171c2c;
+        margin-top: 5px;
+    }
+    
+    #acm_logo {
+        height: 5em;
+    }
+    
+    #acm_logo {
+        padding: 10px;
+    }
+    
+    #state,
+    #covid-btn,
+    #cowin-btn {
+        box-shadow: 0 4px 10px rgba(0, 29, 54, .04)!important;
+        border: snow;
+        background-color: #fff;
+        height: 2.25em;
+        margin-top: 2em;
+        margin-right: 1em;
+        text-align: center;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+    
+    #covid-btn,
+    #cowin-btn {
+        width: 9em;
+    }
+    /* SECTION1 */
+    
+    #section1 {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+    }
+    
+    .total,
+    .recovered,
+    .deaths,
+    .total:active,
+    .recovered:active,
+    .deaths:active {
+        text-align: center;
+        height: 10em;
+        width: 27em;
+        /* border: 1px solid rgb(204, 201, 201); */
+        /* border: salmon 2px solid; */
+        background-color: #171c2c;
+        border-radius: 25px;
+        margin-bottom: 25px;
+        margin: 5px;
+        padding-top: 25px;
+        /* border: 2px solid red; */
+    }
+    
+    .total,
+    .total:active {
+        margin-left: 30px;
+    }
+    
+    .deaths,
+    .deaths:active {
+        margin-right: 30px;
+    }
+    /* SECTION-2 */
+    
+    .total h3,
+    .recovered h3,
+    .deaths h3,
+    .total:active h3,
+    .recovered:active h3,
+    .deaths:active h3 {
+        color: #ecebeb;
+        margin-top: 10px;
+        font-size: 25px;
+        /* font-family: cursive; */
+    }
+    
+    #total,
+    #recovered,
+    #deaths,
+    #total:active,
+    #recovered:active,
+    #deaths:active {
+        margin-top: 15px;
+    }
+    
+    #total p {
+        height: 40px;
+    }
+    
+    #graph {
+        position: relative;
+        margin: auto;
+        width: 95vw;
+        background-color: #171c2c;
+        border-radius: 25px;
+        padding: 20px;
+        border-bottom: #10131f solid 25px;
+    }
+    /* SECTION-3 */
+    
+    #section3 {
+        border-top: 30px solid #10131f;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: #10131f solid 25px;
+        padding: 0 20px;
+    }
+    
+    #itistable {
+        border-radius: 25px;
+        height: 400px;
+        width: 1050px;
+        padding: 20px;
+        /* border: 2px solid red; */
+        margin: 1em;
+        background-color: #171c2c;
+    }
+    
+    td,
+    th {
+        color: rgb(230, 227, 227);
+        background-color: #171c2c;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    #pie {
+        width: 355px;
+        height: 400px;
+        background-color: #171c2c;
+        margin: auto;
+        padding: 20px;
+        /* border: white 2px solid; */
+        border-radius: 25px;
+    }
+    
+    #graph2 {
+        position: relative;
+        margin: auto;
+        width: 95vw;
+        background-color: #171c2c;
+        border-radius: 25px;
+        padding: 20px;
+    }
+    
+    #graph2 canvas {
+        height: 100%;
+    }
+    
+    #graph p {
+        text-align: center;
+        color: #fafafa;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    
+    #pie p,
+    #graph2 p {
+        text-align: center;
+        color: #fafafa;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    @media screen and (max-width:700px) {
+        #section1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .total,
+        .recovered,
+        .deaths,
+        .total:active,
+        .recovered:active,
+        .deaths:active {
+            margin: 5px auto;
+        }
+    }
+    
+    @media screen and (max-width: 1490px) {
+        #pie {
+            height: 400px;
+            width: 30vw;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        #itistable {
+            width: 60vw;
+        }
+    }
+    
+    @media screen and (max-width:1280px) {
+        #pie {
+            height: 300px;
+            width: 30vw;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        #itistable {
+            width: 60vw;
+            height: 300px;
+        }
+        #bleh,
+        #bleh1 {
+            overflow-x: scroll;
+            width: 957px;
+        }
+    }
+    
+    @media screen and (max-width:785px) {
+        #pie {
+            width: 600px;
+            height: 600px;
+        }
+        #itistable {
+            width: 95vw;
+        }
+    }
+    
+    @media screen and (max-width:550px) {
+        #pie {
+            width: 400px;
+            height: 400px;
+        }
+        #itistable {
+            width: 95vw;
+            margin: auto;
+        }
+    }
+    
+    @media screen and (max-width:350px) {
+        #itistable {
+            width: 95vw;
+            margin: auto;
+        }
+    }
+    
+    @media screen and (max-width:550px) {
+        #state {
+            box-shadow: 0 4px 10px rgba(0, 29, 54, .04)!important;
+            color: #646464;
+            border: snow;
+            background-color: #fff;
+            height: 2.25em;
+            width: 120px;
+            margin-top: 2em;
+            margin-right: 1em;
+            text-align: center;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+    }
